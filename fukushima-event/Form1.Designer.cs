@@ -41,8 +41,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(327, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.Location = new System.Drawing.Point(388, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 46);
             this.label1.TabIndex = 0;
@@ -52,7 +53,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(63, 93);
+            this.label2.Location = new System.Drawing.Point(93, 111);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 25);
             this.label2.TabIndex = 1;
@@ -62,7 +63,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(62, 395);
+            this.label3.Location = new System.Drawing.Point(37, 373);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(166, 25);
             this.label3.TabIndex = 2;
@@ -72,7 +73,8 @@
             // 
             this.dateLabel.AutoSize = true;
             this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateLabel.Location = new System.Drawing.Point(614, 93);
+            this.dateLabel.ForeColor = System.Drawing.Color.OrangeRed;
+            this.dateLabel.Location = new System.Drawing.Point(682, 84);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(70, 25);
             this.dateLabel.TabIndex = 3;
@@ -81,26 +83,26 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(67, 125);
+            this.pictureBox1.Location = new System.Drawing.Point(219, 111);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(606, 236);
+            this.pictureBox1.Size = new System.Drawing.Size(444, 337);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // testData
             // 
             this.testData.AutoSize = true;
-            this.testData.Location = new System.Drawing.Point(386, 459);
+            this.testData.Location = new System.Drawing.Point(454, 509);
             this.testData.Name = "testData";
-            this.testData.Size = new System.Drawing.Size(51, 20);
+            this.testData.Size = new System.Drawing.Size(52, 18);
             this.testData.TabIndex = 5;
             this.testData.Text = "label4";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 631);
+            this.ClientSize = new System.Drawing.Size(889, 568);
             this.Controls.Add(this.testData);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dateLabel);
