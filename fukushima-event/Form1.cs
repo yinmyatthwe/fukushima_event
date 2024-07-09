@@ -22,13 +22,13 @@ namespace fukushima_event
         {
             //日付け
             dateLabel.Text = DateTime.Now.ToString("D");
-            Main();
-            
+            //testData.Text =;
+             Main();
+
         }
         //データー
-        static async Task Main()
+        public static async Task Main()
         {
-           
             string url = "https://www.minpo.jp/pub/dento_gyoji2020/index";
             using (HttpClient client = new HttpClient())
             {
@@ -37,9 +37,11 @@ namespace fukushima_event
                     HttpResponseMessage response = await client.GetAsync(url);
                     response.EnsureSuccessStatusCode(); 
 
+                    
                     string content = await response.Content.ReadAsStringAsync();
 
                     Console.WriteLine(content);
+                    
                 }
                 catch (HttpRequestException e)
                 {

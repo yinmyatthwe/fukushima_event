@@ -34,6 +34,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dateLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.testData = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,11 +87,21 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // testData
+            // 
+            this.testData.AutoSize = true;
+            this.testData.Location = new System.Drawing.Point(386, 459);
+            this.testData.Name = "testData";
+            this.testData.Size = new System.Drawing.Size(51, 20);
+            this.testData.TabIndex = 5;
+            this.testData.Text = "label4";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 631);
+            this.Controls.Add(this.testData);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.label3);
@@ -113,6 +124,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label dateLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label testData;
     }
 }
 
