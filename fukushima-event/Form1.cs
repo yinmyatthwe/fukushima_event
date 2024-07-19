@@ -21,7 +21,6 @@ namespace fukushima_event
         public Form1()
         {
             InitializeComponent();
-            InitializeMap();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -32,45 +31,7 @@ namespace fukushima_event
             Main();
         }
         //map
-        private void InitializeMap()
-        {
-            try
-            {
-                gMapControl1.MapProvider = GMapProviders.GoogleMap;
-                gMapControl1.Position = new PointLatLng(37.76072260, 140.4733561); // 福島県
-                gMapControl1.MinZoom = 2;
-                gMapControl1.MaxZoom = 18;
-                gMapControl1.Zoom = 10;
-                gMapControl1.AutoScroll = true;
-
-                // Add a marker
-                GMapMarker marker1 = new GMarkerGoogle(new PointLatLng(37.050419, 140.887680), GMarkerGoogleType.red_dot);　//いわき市
-                GMapMarker marker2 = new GMarkerGoogle(new PointLatLng(37.400529, 140.3597421), GMarkerGoogleType.red_dot);　//郡山市
-                GMapMarker marker3 = new GMarkerGoogle(new PointLatLng(37.7964381, 140.9194475), GMarkerGoogleType.red_dot); //相馬市
-                GMapMarker marker4 = new GMarkerGoogle(new PointLatLng(37.3439717, 140.96995645), GMarkerGoogleType.red_dot);//富岡町
-                GMapMarker marker5 = new GMarkerGoogle(new PointLatLng(37.8005851, 140.4003538), GMarkerGoogleType.red_dot); //福島市
-                GMapMarker marker6 = new GMarkerGoogle(new PointLatLng(37.1309437, 140.2560466), GMarkerGoogleType.red_dot);　//白河市
-                GMapMarker marker7 = new GMarkerGoogle(new PointLatLng(37.4520054, 139.9762868), GMarkerGoogleType.red_dot);　//会津市
-
-
-                GMapOverlay markers = new GMapOverlay("markers");
-                markers.Markers.Add(marker1);
-                markers.Markers.Add(marker2);
-                markers.Markers.Add(marker3);
-                markers.Markers.Add(marker4);
-                markers.Markers.Add(marker5);
-                markers.Markers.Add(marker6);
-                markers.Markers.Add(marker7);
-
-
-                gMapControl1.Overlays.Add(markers);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred: {ex.Message}");
-            }
-
-        }
+        
 
         //データー
         public static async Task Main()
@@ -138,6 +99,20 @@ namespace fukushima_event
         private void gMapControl1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void mapBtn_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+        }
+
+        private void fukushimaBtn_Click(object sender, EventArgs e)
+        {
+            string pdfFilePath = "C:\\Users\\Ma Yin Myat Thwe\\Desktop\\WIZ\\397116.pdf";
+            var start = System.Diagnostics.Process.Start(pdfFilePath);
+            start.EnableRaisingEvents = true;
+           
         }
     }
 }

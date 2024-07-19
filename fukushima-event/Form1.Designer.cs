@@ -41,7 +41,8 @@
             this.linkLabel6 = new System.Windows.Forms.LinkLabel();
             this.linkLabel7 = new System.Windows.Forms.LinkLabel();
             this.linkLabel8 = new System.Windows.Forms.LinkLabel();
-            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
+            this.mapBtn = new System.Windows.Forms.Button();
+            this.fukushimaBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,9 +79,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(428, 508);
+            this.pictureBox1.Location = new System.Drawing.Point(40, 86);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(338, 236);
+            this.pictureBox1.Size = new System.Drawing.Size(653, 306);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -173,38 +174,33 @@
             this.linkLabel8.Text = "会津田島祇園祭 （南会津町）";
             this.linkLabel8.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel8_LinkClicked);
             // 
-            // gMapControl1
+            // mapBtn
             // 
-            this.gMapControl1.Bearing = 0F;
-            this.gMapControl1.CanDragMap = true;
-            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
-            this.gMapControl1.GrayScaleMode = false;
-            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(46, 71);
-            this.gMapControl1.MarkersEnabled = true;
-            this.gMapControl1.MaxZoom = 2;
-            this.gMapControl1.MinZoom = 2;
-            this.gMapControl1.MouseWheelZoomEnabled = true;
-            this.gMapControl1.Name = "gMapControl1";
-            this.gMapControl1.NegativeMode = false;
-            this.gMapControl1.PolygonsEnabled = true;
-            this.gMapControl1.RetryLoadTile = 0;
-            this.gMapControl1.RoutesEnabled = true;
-            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
-            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(720, 321);
-            this.gMapControl1.TabIndex = 15;
-            this.gMapControl1.Zoom = 0D;
-            this.gMapControl1.Load += new System.EventHandler(this.gMapControl1_Load);
+            this.mapBtn.Location = new System.Drawing.Point(644, 649);
+            this.mapBtn.Name = "mapBtn";
+            this.mapBtn.Size = new System.Drawing.Size(104, 47);
+            this.mapBtn.TabIndex = 14;
+            this.mapBtn.Text = "マップへ";
+            this.mapBtn.UseVisualStyleBackColor = true;
+            this.mapBtn.Click += new System.EventHandler(this.mapBtn_Click);
+            // 
+            // fukushimaBtn
+            // 
+            this.fukushimaBtn.Location = new System.Drawing.Point(644, 702);
+            this.fukushimaBtn.Name = "fukushimaBtn";
+            this.fukushimaBtn.Size = new System.Drawing.Size(104, 44);
+            this.fukushimaBtn.TabIndex = 15;
+            this.fukushimaBtn.Text = "情報";
+            this.fukushimaBtn.UseVisualStyleBackColor = true;
+            this.fukushimaBtn.Click += new System.EventHandler(this.fukushimaBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(808, 774);
-            this.Controls.Add(this.gMapControl1);
+            this.ClientSize = new System.Drawing.Size(808, 944);
+            this.Controls.Add(this.fukushimaBtn);
+            this.Controls.Add(this.mapBtn);
             this.Controls.Add(this.linkLabel8);
             this.Controls.Add(this.linkLabel7);
             this.Controls.Add(this.linkLabel6);
@@ -241,7 +237,8 @@
         private System.Windows.Forms.LinkLabel linkLabel6;
         private System.Windows.Forms.LinkLabel linkLabel7;
         private System.Windows.Forms.LinkLabel linkLabel8;
-        private GMap.NET.WindowsForms.GMapControl gMapControl1;
+        private System.Windows.Forms.Button mapBtn;
+        private System.Windows.Forms.Button fukushimaBtn;
     }
 }
 
